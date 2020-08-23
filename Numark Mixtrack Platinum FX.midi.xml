@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MixxxControllerPreset schemaVersion="1" mixxxVersion="2.1.0+">
+    <info>
+        <name>Numark Mixtrack Platinum FX</name>
+        <author>istankovic</author>
+        <description>Numark Mixtrack Platinum FX mapping</description>
+        <forums>TODO</forums>
+        <wiki>TODO</wiki>
+    </info>
+    <controller id="MixTrack">
+        <scriptfiles>
+            <file filename="Numark-Mixtrack-Platinum-FX-scripts.js" functionprefix="MixtrackPlatinumFX"/>
+        </scriptfiles>
+
+    <!-- Channel 1 -->
+        <controls>
+            <control>
+                <group>[Channel1]</group>
+                <key>rate</key>
+                <status>0xB0</status>
+                <midino>0x29</midino>
+                <options>
+                    <invert/>
+                    <fourteen-bit-lsb/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>cue_default</key>
+                <status>0x90</status>
+                <midino>0x01</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>play</key>
+                <status>0x80</status>
+                <midino>0x00</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+
+
+    <!-- Master -->
+            <control>
+                <group>[Master]</group>
+                <key>crossfader</key>
+                <status>0xBF</status>
+                <midino>0x08</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>gain</key>
+                <status>0xBE</status>
+                <midino>0x23</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+        </controls>
+        <outputs/>
+    </controller>
+</MixxxControllerPreset>
